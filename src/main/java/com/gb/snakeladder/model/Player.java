@@ -1,16 +1,14 @@
 package com.gb.snakeladder.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-
+@Data
 public class Player {
+
     private String name;
-    @Setter
     private int position;
-    @Setter
     private boolean won;
+
     public Player(String name) {
         this.name = name;
         this.position = 0;
